@@ -59,6 +59,7 @@ ul {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  padding: 24px 0;
 }
 .list:hover {
   color: #404bbf;
@@ -154,14 +155,16 @@ ul {
 }
 
 .visually-hidden {
-  position: absolute !important;
+  position: absolute;
   overflow: hidden;
-  clip: rect(0 0 0 0);
   height: 1px;
   width: 1px;
   margin: -1px;
   padding: 0;
   border: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
 }
 
 .features {
