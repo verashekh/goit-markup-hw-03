@@ -22,30 +22,34 @@ ul {
   list-style-type: none;
 }
 
+.container {
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
 /* header */
 .page-header {
-  margin: 0 auto;
-  padding: 0 auto;
-  background: #fff;
   border-bottom: 1px solid #e7e9fc;
 }
 
 .container-menu {
-  max-width: 1440px;
-  margin: o auto;
-  margin: 24px 156px 24px 156px;
   display: flex;
   justify-content: space-between;
 }
 
 .page-nav {
   display: flex;
-  gap: 76px;
+  align-items: center;
 }
 
 .menu {
   display: flex;
   gap: 40px;
+}
+
+.item {
+  padding: 24px 0;
 }
 
 .list {
@@ -89,6 +93,7 @@ ul {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+  margin-right: 76px;
 }
 
 .logo-studio {
@@ -99,14 +104,8 @@ ul {
 /* Section solutions */
 .section-solution {
   margin: 0 auto;
-  padding: 0 auto;
   background: #2e2f42;
-}
-.container-solution {
-  width: 1440px;
-  margin: o auto;
-  padding: 188px 472px 188px 472px;
-  justify-content: center;
+  padding: 188px 0;
 }
 
 .section-title-solution {
@@ -117,6 +116,8 @@ ul {
   text-align: center;
   color: #fff;
   margin-bottom: 48px;
+  max-width: 496px;
+  margin: 0 auto;
 }
 
 .order-service-btn {
@@ -133,7 +134,11 @@ ul {
   border-radius: 4px;
   padding: 16px 32px;
   border: none;
-  margin-left: 164px;
+  margin-left: 480px;
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  margin-top: 48px;
 }
 
 .order-service-btn:hover {
@@ -145,28 +150,25 @@ ul {
 /* Our features */
 .section-features {
   margin: 0 auto;
-  padding: 0 auto;
+  padding: 120px 0;
 }
 
-.container-features {
-  width: 1128px;
-  margin: 120px 156px;
-}
-
-.section-title-features {
-  font-size: 36px;
-  line-height: 1.11;
-  letter-spacing: 0.02em;
-  text-align: center;
-  text-transform: capitalize;
-  color: #2e2f42;
-  display: none;
+.visually-hidden {
+  position: absolute !important;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
 }
 
 .features {
   display: flex;
   gap: 24px;
 }
+
 .item-features {
   width: calc((100% - 72px) / 4);
 }
@@ -192,13 +194,8 @@ ul {
 /* Our team */
 .section-team {
   margin: 0 auto;
-  padding: 0 auto;
+  padding: 120px 0;
   background: #f4f4fd;
-}
-
-.container-team {
-  width: 1440px;
-  padding: 120px 156px;
 }
 
 .section-title-team {
@@ -224,21 +221,26 @@ ul {
   width: calc((100% - 72px) / 4);
 }
 
+.container-our-team-descr {
+  padding: 32px 0;
+}
+
 .our-team-title {
   display: flex;
   justify-content: center;
+  text-align: center;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  margin-top: 32px;
   margin-bottom: 8px;
 }
 
 .our-team-descr {
   display: flex;
   justify-content: center;
+  text-align: center;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -249,13 +251,9 @@ ul {
 /* Our portfolio */
 .section-portfolio {
   margin: 0 auto;
-  padding: 0 auto;
+  padding-top: 120px;
+  padding-bottom: 120px;
   background: #fff;
-}
-
-.container-portfolio {
-  width: 1128px;
-  margin: 130px 156px 120px 156px;
 }
 
 .section-title-portfolio {
@@ -267,20 +265,26 @@ ul {
   margin-bottom: 72px;
 }
 
+.container-our-portfolio-descr {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+}
+
 .our-portfolio-title {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  margin-top: 32px;
   margin-bottom: 8px;
 }
 
 .portfolio {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
+  row-gap: 48px;
+  column-gap: 24px;
 }
 .portfolio-cards {
   border: 1px solid #e7e9fc;
@@ -293,16 +297,11 @@ ul {
 
 .section-footer {
   margin: 0 auto;
-  padding: 0 auto;
+  padding: 100px 0;
   background: #2e2f42;
 }
 
-.container-footer {
-  width: 1400px;
-  padding: 100px 1020px 100px 156px;
-}
-
-.logo-web-futter {
+.logo-web-footer {
   text-decoration: none;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -311,8 +310,10 @@ ul {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
-  padding-top: 100px;
+  display: inline-block;
+  margin-bottom: 16px;
 }
+
 .logo-studio-futter {
   color: #f4f4fd;
 }
@@ -322,6 +323,5 @@ ul {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
-  width: 264px;
-  margin-top: 16px;
+  max-width: 264px;
 }
