@@ -36,6 +36,7 @@ ul {
 .container-menu {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .page-nav {
@@ -48,10 +49,6 @@ ul {
   gap: 40px;
 }
 
-.item {
-  padding: 24px 0;
-}
-
 .list {
   text-decoration: none;
   font-weight: 500;
@@ -60,6 +57,7 @@ ul {
   letter-spacing: 0.02em;
   color: #2e2f42;
   padding: 24px 0;
+  display: block;
 }
 .list:hover {
   color: #404bbf;
@@ -77,6 +75,8 @@ ul {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  padding: 24px 0;
+  display: block;
 }
 .links:hover {
   color: #404bbf;
@@ -87,6 +87,7 @@ ul {
 
 /* logo */
 .logo-web {
+  font-family: 'Raleway', sans-serif;
   text-decoration: none;
   font-weight: 700;
   font-size: 18px;
@@ -133,13 +134,11 @@ ul {
   background: #4d5ae5;
   padding: 16px 32px;
   border-radius: 4px;
-  padding: 16px 32px;
   border: none;
-  margin-left: 480px;
   display: block;
   min-width: 169px;
   height: 56px;
-  margin-top: 48px;
+  margin: 48px auto;
 }
 
 .order-service-btn:hover {
@@ -217,7 +216,6 @@ ul {
 
 .team-players {
   border-radius: 0 0 4px 4px;
-  padding: 0px 0px 32px 0px;
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
   background: #fff;
@@ -229,8 +227,6 @@ ul {
 }
 
 .our-team-title {
-  display: flex;
-  justify-content: center;
   text-align: center;
   font-weight: 500;
   font-size: 20px;
@@ -241,8 +237,6 @@ ul {
 }
 
 .our-team-descr {
-  display: flex;
-  justify-content: center;
   text-align: center;
   font-weight: 400;
   font-size: 16px;
@@ -290,9 +284,6 @@ ul {
   column-gap: 24px;
 }
 .portfolio-cards {
-  border: 1px solid #e7e9fc;
-  width: 360px;
-  height: 420px;
   width: calc((100% - 48px) / 3);
 }
 
